@@ -13,7 +13,7 @@ public class Main {
     }
     public static void main(String[] args) {
      Shape s1 = new Shape("Green");
-     Shape s2 = new Shape("RED");
+     Shape s2 = new Shape("Red");
      Shape r = new Rectangle("Green", 2.2, 4.2);
      Shape r1 = new Rectangle("yellow", 2.2, 4.2);
      Shape c = new Circle("Blue", 5.6);
