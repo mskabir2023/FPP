@@ -26,8 +26,8 @@ public class DeptEmployee {
         return hireDate;
     }
 
-    public void setHireDate(LocalDate hireDate) {
-        this.hireDate = hireDate;
+    public void setHireDate(int year,int month,int day) {
+        this.hireDate = LocalDate.of(year,month,day);
     }
     public double computeSalary(){
         return salary;

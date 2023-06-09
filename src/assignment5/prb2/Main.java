@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        DeptEmployee p1 = new Professor("RAJU AHMED", 120000.0, LocalDate.parse("12/02/1995", DateTimeFormatter.ofPattern("MM/dd/yyyy")), 5);
+        Professor p1 = new Professor("RAJU AHMED", 120000.0, LocalDate.parse("12/02/1995", DateTimeFormatter.ofPattern("MM/dd/yyyy")), 5);
         DeptEmployee p2 = new Professor("ABDUR RAHIM", 115000.0, LocalDate.parse("12/03/2000", DateTimeFormatter.ofPattern("MM/dd/yyyy")), 5);
         DeptEmployee p3 = new Professor("ANISUL KARIM", 105000.0, LocalDate.parse("12/03/2001", DateTimeFormatter.ofPattern("MM/dd/yyyy")), 5);
 
