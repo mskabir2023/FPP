@@ -1,5 +1,7 @@
 package assignment5.prb4;
 
+import java.util.Objects;
+
 public abstract class Employee {
     private String firstName;
     private String lastName;
@@ -30,14 +32,28 @@ public abstract class Employee {
         this.sSN = sSN;
     }
 
-    public Employee(String firstName, String lastName, String sSN) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.sSN = sSN;
+    public Employee(String afirstName, String alastName, String asSN) {
+        firstName = afirstName;
+        lastName = alastName;
+        sSN = asSN;
     }
 
     @Override
     public String toString() {
         return "Name: "+ getFirstName()+" "+getLastName()+" "+"Salary: "+ getPayment();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName) && Objects.equals(sSN, employee.sSN);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName, sSN);
     }
 }
