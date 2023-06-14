@@ -7,7 +7,7 @@ public class Main {
      *  and passes to computeSumOfSalaries
      */
     public static void main(String[] args) {
-        ArrayList<Staff> staff = new ArrayList<Staff>();
+        List<Staff> staff = new ArrayList<Staff>();
         staff.add(new Staff("Mohammad", 130000, 3));
         staff.add(new Staff("Jakaria", 130000, 2));
         staff.add(new Staff("Stave", 110000, 1));
